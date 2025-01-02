@@ -309,6 +309,12 @@ export default class TransparencyControl extends M.Control {
     });
   }
 
+  effectSelectedImpl_() {
+    setTimeout(() => {
+      this.getImpl().effectSelected(this.layerSelected, this.radius, this.freeze);
+    }, 1000);
+  }
+
   /**
     * Activate Select/Input
     *
